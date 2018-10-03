@@ -3,12 +3,7 @@
 require "vendor/autoload.php";
 require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
 
-<<<<<<< HEAD
-$access_token ='YSwPWOmQZUB14QF6JAhdODRHiMs4Z0zotyIB4GlEokSYN9PTjc/n4xEFqaf7rdQcGxH26Kv0iML+c9zf8NPC1w4aS4bYzHVDLz26NqTZbTFFmj6HTbKnGKHn5/SBjo1N5VCe/0tXvSYlvHBT10mJOwdB04t89/1O/w1cDnyilFU=';
-=======
-$access_token = 'YSwPWOmQZUB14QF6JAhdODRHiMs4Z0zotyIB4GlEokSYN9PTjc/n4xEFqaf7rdQcGxH26Kv0iML+c9zf8NPC1w4aS4bYzHVDLz26NqTZbTFFmj6HTbKnGKHn5/SBjo1N5VCe/0tXvSYlvHBT10mJOwdB04t89/1O/w1cDnyilFU=';
->>>>>>> fddb37494a313df48143fc2c39ad6409945c7734
-
+$access_token = 'ngIrfg+3dNS+YRRHNGQ6bcNqdtR15hrqSRdQ8KBZdRC8Yku6flPp3RJAQNEp4eEOpfP5sDOeW9hRoXbZ7Y6VbSRGJZvs42x4BSsOOpdpf6ZeIM1MHMIhFBbqOeoebl8anKWaTrdvk4Wsa06+RfbqjQdB04t89/1O/w1cDnyilFU=';
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
