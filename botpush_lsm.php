@@ -23,7 +23,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("LSM99\nแจ้งถอนเงิน\nวันที่ทำรายการ : ".$date."\ncallcenter : ".$callcenter."\nLSMID : ".$lsmid."\nจำนวนเงินที่ถอน : ".$amount." บาท\nชื่อบัญชี : ".$accname."\nเลขที่บัญชี : ".$accno."\nธนาคาร : ".$bank);
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("LSM99\n\nแจ้งถอนเงิน\n\nวันที่ทำรายการ : ".$date."\n\ncallcenter : ".$callcenter."\nLSMID : ".$lsmid."\nจำนวนเงินที่ถอน : ".$amount." บาท\nชื่อบัญชี : ".$accname."\nเลขที่บัญชี : ".$accno."\nธนาคาร : ".$bank);
 
 
 
@@ -38,7 +38,7 @@ function goback()
     header("Location:http://support.gclubmd.com/lsm99/".$id."/show?success=1");
     exit;
 }
-//goback();
+goback();
 
 
 
