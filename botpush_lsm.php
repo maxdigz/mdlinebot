@@ -16,7 +16,7 @@ $access_token = 'BGFqduH48YAAWc9FYOu1FK12ah2JlNzho9UGguKqdpyBsHD8d9iE7KZ8gVPzESW
 
 $channelSecret = '6be6eb0f43914264279b926499d5d59a';
 
-$pushID = 'Uc9c84f548b5a45f88a0392ddb018529c';
+$pushID = 'Cdfb4d4fc4f778867049a639aeefa2aba';
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
@@ -31,7 +31,9 @@ $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("LSM99
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 //echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
-$url = "Location:http://localhost/supportmd/public/lsm99/".$id."/show";
+//$url = "Location:http://localhost/supportmd/public/lsm99/".$id."/show";
+$url = "Location:http://support.gclubmd.com/lsm99/".$id."/show";
+
 header($url);
 
 
