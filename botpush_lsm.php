@@ -37,7 +37,8 @@ function goback()
    // header("Location: {$_SERVER['HTTP_REFERER']}?success=1");
    // header("Location:http://support.gclubmd.com/lsm99/".$id."/show?success=1");
     $url = "Location:http://localhost/supportmd/public/lsm99/".$id."/show";
-    header($url);
+    echo $url;
+    //header($url);
     exit;
 }
 goback();
