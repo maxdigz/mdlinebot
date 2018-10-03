@@ -31,18 +31,8 @@ $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("LSM99
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 //echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
-
-function goback()
-{
-   // header("Location: {$_SERVER['HTTP_REFERER']}?success=1");
-   // header("Location:http://support.gclubmd.com/lsm99/".$id."/show?success=1");
-    $url = "Location:http://localhost/supportmd/public/lsm99/".$id."/show";
-    echo $url;
-    //header($url);
-    exit;
-}
-goback();
- //   echo $id;
+$url = "Location:http://localhost/supportmd/public/lsm99/".$id."/show";
+header($url);
 
 
 
