@@ -8,15 +8,13 @@
     //รับข้อความจากผู้ใช้
     $message = $arrayJson['events'][0]['message']['text'];
     //รับ id ของผู้ใช้
-    $id = $arrayJson['events'][0]['source']['userId'];
+   // $id = $arrayJson['events'][0]['source']['userId'];
+    $id = $arrayJson['events'][0]['source']['groupId'];
     #ตัวอย่าง Message Type "Text + Sticker"
-    if($message == "สวัสดี"){
+    if($message == "hi"){
         $arrayPostData['to'] = $id;
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา->>".$id;;
-        $arrayPostData['messages'][1]['type'] = "sticker";
-        $arrayPostData['messages'][1]['packageId'] = "2";
-        $arrayPostData['messages'][1]['stickerId'] = "34";
+        $arrayPostData['messages'][0]['text'] = "ID->>".$id;;
         pushMsg($arrayHeader,$arrayPostData);
     }
     function pushMsg($arrayHeader,$arrayPostData){
