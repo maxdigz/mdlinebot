@@ -35,7 +35,8 @@ $response = $bot->pushMessage($pushID, $textMessageBuilder);
 function goback()
 {
    // header("Location: {$_SERVER['HTTP_REFERER']}?success=1");
-    header("Location:http://support.gclubmd.com/lsm99/".$id."/show?success=1");
+   // header("Location:http://support.gclubmd.com/lsm99/".$id."/show?success=1");
+    header("Location:http://localhost/supportmd/public/lsm99/".$id."/show?success=1");
     exit;
 }
 goback();
