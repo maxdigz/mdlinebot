@@ -39,7 +39,8 @@ function goback()
     header("Location:http://localhost/supportmd/public/lsm99/".$id."/show?success=1");
     exit;
 }
-goback();
+//goback();
+    echo $id;
 
 
 
