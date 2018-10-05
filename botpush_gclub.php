@@ -8,7 +8,8 @@ $accno = $_GET['accno'];
 $bank = $_GET['bank'];
 
 $date = $_GET['date'];
-
+$bbalance =$_GET['bbalance'];
+$afbalance =$_GET['afbalance'];
 
 require "vendor/autoload.php";
 
@@ -26,7 +27,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUBMD\nแจ้งถอนเงิน\nวันที่ทำรายการ : ".$date."\ncallcenter : ".$callcenter."\nGCLUBID : ".$gclubid."\nจำนวนเงินที่ถอน : ".$amount." บาท\nชื่อบัญชี : ".$accname."\nเลขที่บัญชี : ".$accno."\nธนาคาร : ".$bank);
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUBMD\nแจ้งถอนเงิน\nวันที่ทำรายการ : ".$date."\ncallcenter : ".$callcenter."\nGCLUBID : ".$gclubid."\nก่อนทำรายการ".$bbalance." บาท\nจำนวนเงินที่ถอน : ".$amount." บาท\nหลังทำรายการ".$afbalance." บาท\nชื่อบัญชี : ".$accname."\nเลขที่บัญชี : ".$accno."\nธนาคาร : ".$bank);
 
 
 
