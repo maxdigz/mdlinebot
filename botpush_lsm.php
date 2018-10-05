@@ -24,7 +24,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 
 
-    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("LSM99\nแจ้งถอนเงิน\nวันที่ทำรายการ : ".$date."\ncallcenter : ".$callcenter."\nLSMID : ".$lsmid."\n[ยอดคงเหลือก่อนทำรายการ : ".$bfbalance." บาท]\nจำนวนเงินที่ถอน : ".$amount." บาท\n[ยอดคงเหลือหลังทำรายการ : ".$balance." บาท]\nชื่อบัญชี : ".$accname."\nเลขที่บัญชี : ".$accno."\nธนาคาร : ".$bank);
+    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("LSM99\nแจ้งถอนเงิน\nวันที่ทำรายการ : ".$date."\ncallcenter : ".$callcenter."\nLSMID : ".$lsmid."\nก่อนทำรายการ : ".$bfbalance." บาท\nจำนวนเงินที่ถอน : ".$amount." บาท\nหลังทำรายการ : ".$balance." บาท\nชื่อบัญชี : ".$accname."\nเลขที่บัญชี : ".$accno."\nธนาคาร : ".$bank);
 
 
 
