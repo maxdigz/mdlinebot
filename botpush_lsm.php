@@ -6,7 +6,7 @@ $amount =$_GET['amount'];
 $accname = $_GET['accname'];
 $accno = $_GET['accno'];
 $bank = $_GET['bank'];
-
+$balance =$_GET['balance'];
 $date = $_GET['date'];
 
 
@@ -23,7 +23,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("LSM99\nแจ้งถอนเงิน\nวันที่ทำรายการ : ".$date."\ncallcenter : ".$callcenter."\nLSMID : ".$lsmid."\nจำนวนเงินที่ถอน : ".$amount." บาท\nชื่อบัญชี : ".$accname."\nเลขที่บัญชี : ".$accno."\nธนาคาร : ".$bank);
+    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("LSM99\nแจ้งถอนเงิน\nวันที่ทำรายการ : ".$date."\ncallcenter : ".$callcenter."\nLSMID : ".$lsmid."\nจำนวนเงินที่ถอน : ".$amount." บาท\nชื่อบัญชี : ".$accname."\nเลขที่บัญชี : ".$accno."\nธนาคาร : ".$bank."\n[ยอดคงเหลือหลังทำรายการ : ".$balance." บาท]");
 
 
 
