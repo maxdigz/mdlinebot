@@ -35,8 +35,8 @@ $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUB
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 //echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
-$url = "Location:http://localhost/supportmd/public/gclub/".$id."/show";
-//$url = "Location:http://support.gclubmd.com/lsm99/".$id."/show";
+//$url = "Location:http://localhost/supportmd/public/gclub/".$id."/show";
+$url = "Location:http://support.gclubmd.com/gclub/".$id."/show";
 
 header($url);
 
