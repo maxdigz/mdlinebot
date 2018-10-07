@@ -8,8 +8,8 @@ $accno = $_GET['accno'];
 $bank = $_GET['bank'];
 
 $date = $_GET['date'];
-$bbalance =$_GET['bbalance'];
-$afbalance =$_GET['afbalance'];
+$bbalance =number_format($_GET['bbalance'],2);
+$afbalance =number_format($_GET['afbalance'],2);
 
 require "vendor/autoload.php";
 
