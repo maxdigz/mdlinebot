@@ -33,7 +33,7 @@ $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 //echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 //$url = "Location:http://localhost/supportmd/public/lsm99/".$id."/show";
-$url = "Location:http://support.gclubmd.com/lsm99/".$id."/show";
+$url = "Location:http://support2md.com/lsm99/".$id."/show";
 
 header($url);
 
