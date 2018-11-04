@@ -6,8 +6,9 @@ $amount =$_GET['amount'];
 $accname = $_GET['accname'];
 $accno = $_GET['accno'];
 $bank = $_GET['bank'];
-$bfbalance =$_GET['bfbalance'];
-$balance =$_GET['balance'];
+$bfbalance =number_format($_GET['bfbalance'],2);
+$balance =number_format($_GET['balance'],2);
+
 $date = $_GET['date'];
 
 
