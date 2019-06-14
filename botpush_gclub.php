@@ -17,10 +17,10 @@ $access_token = 'BGFqduH48YAAWc9FYOu1FK12ah2JlNzho9UGguKqdpyBsHD8d9iE7KZ8gVPzESW
 
 $channelSecret = '6be6eb0f43914264279b926499d5d59a';
 //test
-$pushID = 'Uc9c84f548b5a45f88a0392ddb018529c';
+//$pushID = 'Uc9c84f548b5a45f88a0392ddb018529c';
 
     //prod
-//$pushID = 'Cc96dc4b1e62fa26a177d5586dd4c38cc';
+$pushID = 'Cc96dc4b1e62fa26a177d5586dd4c38cc';
     
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
@@ -34,9 +34,9 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
-echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+//echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 //$url = "Location:http://localhost/supportmd/public/gclub/".$id."/show";
-//$url = "Location:http://support2md.com/gclub/".$id."/show";
+$url = "Location:http://support2md.com/gclub/".$id."/show";
 
 header($url);
 
