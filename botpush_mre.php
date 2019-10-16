@@ -37,7 +37,7 @@ $response = $bot->pushMessage($pushID, $textMessageBuilder);
 //echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 //$url = "Location:http://localhost/supportmd/public/gclub/".$id."/show";
 //$url = "Location:http://support2md.com/gclub/".$id."/show";
-$url="https://line.me/R/ti/p/%40882elfqk";
+$url="Location:https://line.me/R/ti/p/%40882elfqk";
 header($url);
 
 
