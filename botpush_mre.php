@@ -36,9 +36,9 @@ $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 //echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 //$url = "Location:http://localhost/supportmd/public/gclub/".$id."/show";
-$url = "Location:http://support2md.com/gclub/".$id."/show";
+//$url = "Location:http://support2md.com/gclub/".$id."/show";
 
-header($url);
+//header($url);
 
 
 
