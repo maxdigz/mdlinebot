@@ -15,7 +15,7 @@ $channelSecret = '6be6eb0f43914264279b926499d5d59a';
 //test
 //$pushID = 'Uc9c84f548b5a45f88a0392ddb018529c';
 
-    //prod เธ?เธฒเธ?
+    //prod ๏ฟฝ?เธฒ๏ฟฝ?
 $pushID = 'Ca82be5bd1f697c64456712a9c95d9ea3';
     
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
@@ -23,7 +23,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 
 
-    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUBMD\nลูกค้าแจ้งถอน\nวันที่แจ้ง : ".$date."\nGCLUBID : ".$gclubid."\nยอดเงินที่ต้องการถอน : ".$amount." บาท\nเบอร์โทรลูกค้า : ".$tel);
+    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUBMD\เธฅเธนเธเธเนเธฒเนเธเนเธเธ–เธญเธ\nเธงเธฑเธเธ—เธตเนเนเธเนเธ : ".$date."\nGCLUBID : ".$gclubid."\nเธเธณเธเธงเธเน€เธเธดเธเธ—เธตเนเนเธเนเธเธ–เธญเธ : ".$amount." เธเธฒเธ—\nเน€เธเธญเธฃเนเนเธ—เธฃเธฅเธนเธเธเนเธฒ : ".$tel);
 
 
 
@@ -34,7 +34,7 @@ $response = $bot->pushMessage($pushID, $textMessageBuilder);
 //$url = "Location:http://localhost/supportmd/public/gclub/".$id."/show";
 //$url = "Location:http://support2md.com/gclub/".$id."/show";
 //$url = "Location:https://gclubmd.com";
-echo "GCLUBMD\nลูกค้าแจ้งถอน\nวันที่แจ้ง : ".$date."\nGCLUBID : ".$gclubid."\nยอดเงินที่ต้องการถอน : ".$amount." บาท\nเบอร์โทรลูกค้า : ".$tel;
+echo "GCLUBMD\n๏ฟฝูก๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ้งถอน\n๏ฟฝัน๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ : ".$date."\nGCLUBID : ".$gclubid."\n๏ฟฝอด๏ฟฝิน๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝอง๏ฟฝ๏ฟฝรถอน : ".$amount." ๏ฟฝาท\n๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝูก๏ฟฝ๏ฟฝ๏ฟฝ : ".$tel;
 
 header($url);
 
