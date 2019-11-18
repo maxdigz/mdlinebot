@@ -4,7 +4,6 @@ $amount =number_format($_GET['amount'],2);
 $tel = $_GET['tel'];
 
 date_default_timezone_set('Asia/Bangkok');
-$date = date_format(date(),"Y-m-d H:i:s");
 
 
 require "vendor/autoload.php";
@@ -23,7 +22,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 
 
-    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUBMD\nลูกค้าแจ้งถอน\nวันที่แจ้ง : ".$date."\nGCLUBID : ".$gclubid."\nจำนวนเงินที่แจ้งถอน : ".$amount." บาท\nเบอร์โทรลูกค้า : ".$tel);
+    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUBMD\nลูกค้าแจ้งถอน\nวันที่แจ้ง : ".date("Y-m-d H:i:s")."\nGCLUBID : ".$gclubid."\nจำนวนเงินที่แจ้งถอน : ".$amount." บาท\nเบอร์โทรลูกค้า : ".$tel);
 
 
 
