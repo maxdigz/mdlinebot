@@ -23,7 +23,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 
 
-    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUBMD\ลูกค้าแจ้งถอน\nวันที่แจ้ง : ".$date."\nGCLUBID : ".$gclubid."\nจำนวนเงินที่แจ้งถอน : ".$amount." บาท\nเบอร์โทรลูกค้า : ".$tel);
+    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUBMD\nลูกค้าแจ้งถอน\nวันที่แจ้ง : ".$date."\nGCLUBID : ".$gclubid."\nจำนวนเงินที่แจ้งถอน : ".$amount." บาท\nเบอร์โทรลูกค้า : ".$tel);
 
 
 
@@ -34,7 +34,6 @@ $response = $bot->pushMessage($pushID, $textMessageBuilder);
 //$url = "Location:http://localhost/supportmd/public/gclub/".$id."/show";
 //$url = "Location:http://support2md.com/gclub/".$id."/show";
 //$url = "Location:https://gclubmd.com";
-echo "GCLUBMD\n�١����駶͹\n�ѹ����� : ".$date."\nGCLUBID : ".$gclubid."\n�ʹ�Թ����ͧ��ö͹ : ".$amount." �ҷ\n�������١��� : ".$tel;
 
 header($url);
 
