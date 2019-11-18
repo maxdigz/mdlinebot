@@ -11,7 +11,7 @@ require "vendor/autoload.php";
 
 $access_token = 'BGFqduH48YAAWc9FYOu1FK12ah2JlNzho9UGguKqdpyBsHD8d9iE7KZ8gVPzESWqpfP5sDOeW9hRoXbZ7Y6VbSRGJZvs42x4BSsOOpdpf6bp3aTUYl8jN4dAsmRlO7o3jdPvoIzZXCOkjF1qHjZfuQdB04t89/1O/w1cDnyilFU=';
 
-$channelSecret = 'Ca82be5bd1f697c64456712a9c95d9ea3';
+$channelSecret = '6be6eb0f43914264279b926499d5d59a';
 //test
 //$pushID = 'Uc9c84f548b5a45f88a0392ddb018529c';
 
