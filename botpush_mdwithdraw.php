@@ -34,6 +34,7 @@ $response = $bot->pushMessage($pushID, $textMessageBuilder);
 //$url = "Location:http://localhost/supportmd/public/gclub/".$id."/show";
 //$url = "Location:http://support2md.com/gclub/".$id."/show";
 //$url = "Location:https://gclubmd.com";
+echo "GCLUBMD\nลูกค้าแจ้งถอน\nวันที่แจ้ง : ".$date."\nGCLUBID : ".$gclubid."\nยอดเงินที่ต้องการถอน : ".$amount." บาท\nเบอร์โทรลูกค้า : ".$tel;
 
 header($url);
 
