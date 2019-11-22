@@ -23,7 +23,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 
 
-    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUBMD\nแจ้งฝากเงิน\nวันที่ทำรายการ : ".date("Y-m-d H:i:s")."\nGCLUBID : ".$gclubid."\nจำนวนเงินที่แจ้งฝาก : ".$amount." บาท\nวันที่แจ้งฝาก : ".$date."\nเวลาที่แจ้งฝาก : ".$time." บาท\nฝากเข้าธนาคาร(GCLUBMD) : ".$bank."\nสลิป ยืนยัน: ".$img);
+    $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("GCLUBMD\nแจ้งฝากเงิน\nวันที่ทำรายการ : ".date("Y-m-d H:i:s")."\nGCLUBID : ".$gclubid."\nจำนวนเงินที่แจ้งฝาก : ".$amount." บาท\nวันที่แจ้งฝาก : ".$date."\nเวลาที่แจ้งฝาก : ".$time." น.\nฝากเข้าธนาคาร(GCLUBMD) : ".$bank."\nสลิป ยืนยัน: ".$img);
 
 
 
